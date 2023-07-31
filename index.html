@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+
+    <div style="display: flex; text-align: center;">
+        <div style="flex: 1;">
+            <h2>INCOME ENTERING</h2>
+    
+            <form name="incomeForm" action="">
+                <label for="incomeItem">Particular</label>
+                <input type="text"  id="incomeItem" name="incomeItem" placeholder="Enter Income Catogory..." required>
+                <label for="incomeAmt">Amount</label>
+                <input type="number"  id="incomeAmt" name="incomeAmt" placeholder="Enter Income Amount..." required><br><br>
+                <input type="button" value="submit" onclick="incoming()">
+            </form>
+        </div>
+        <div style="flex: 1;">
+            <h2>EXPENCE ENTERING</h2>
+            <form name="expenceForm" action="">
+                <label for="expenceItem">Particular</label>
+                <input type="text"  id="expenceItem" name="expenceItem" placeholder="Enter Expense Catogory..." required>
+                <label for="expenceAmt">Amount</label>
+                <input type="number"  id="expenceAmt" name="expenceAmt" placeholder="Enter Expense Amount..." required><br><br>
+                <input type="button" value="submit" onclick="expencing()">
+            </form>
+        </div>
+    </div>
+   
+    
+
+    <div style="display: flex; width: 100%;" >
+        <div style="flex: 1;">
+            <div id="forTable" style="width: 100%;"></div>
+            <p id="sumIncome"></p>
+        </div>
+        <div style="flex: 1;">  
+            <div id="forTable2" style="width: 100%;"></div>
+            <p id="sumExpence"></p>
+        </div> 
+    </div>
+    <canvas id="myChart" style="width:100%; height: 50vh;"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>

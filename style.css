@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table{
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.table tr{
+    width: 100%;
+}
+.table th,td{
+    border: 1px solid black;
+    text-align: start;
+}
