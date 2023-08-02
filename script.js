@@ -13,7 +13,7 @@ function incoming(){
 
     for (i=0 ; i<income.length ; i++){
         var details = income[i];
-        tab += "<tr><td>" + details.perticular + "</td>" + "<td>" + details.amount + "</td></tr>";
+        tab += "<tr><td>" + details.perticular + "</td>" + "<td id='incomingAmt'>" + details.amount + "</td></tr>";
         sum += Number(details.amount);
     }
     tab += "</table>"
@@ -37,7 +37,7 @@ function expencing(){
 
     for (i=0 ; i<expence.length ; i++){
         var detailsExp = expence[i];
-        tabExp += "<tr><td>" + detailsExp.perticularExp + "</td>" + "<td>" + detailsExp.amountExp + "</td></tr>";
+        tabExp += "<tr><td>" + detailsExp.perticularExp + "</td>" + "<td id='expensingAmt'>" + detailsExp.amountExp + "</td></tr>";
         sumExp += Number(detailsExp.amountExp);
     }
     tabExp += "</table>"
