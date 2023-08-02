@@ -16,3 +16,50 @@
     border: 1px solid black;
     text-align: start;
 }
+#pi{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+#heading{
+    font-size: 3.125rem;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    margin: 20px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(210, 255, 240);
+}
+.secHead{
+    text-decoration: underline;
+    padding-bottom: 40px;
+    font-family: sans-serif;
+}
+input[type="text"],input[type="number"]{
+    background-color: rgb(210, 255, 240);
+}
+input[type="button"]{
+    width: 70%;
+    height: 30px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+
+}
+input[type="text"]:focus,input[type="number"]:focus{
+    background-color: white;
+}
+input[type="button"]:hover{
+    background-color: rgb(210, 255, 240);
+}
+#incomingAmt{
+    background-color: rgb(143, 248, 143);
+}
+#expensingAmt{
+    background-color: rgb(233, 134, 134);
+}
